@@ -8,7 +8,7 @@ static void sighandler(int signo){
     exit(1);
   }
   if(signo == SIGUSR1){
-    printf("You wanted a PID? Here: %d\n", getpid());
+    printf("You wanted a PID? Here: %d\n", getppid());
   }
 }
 
